@@ -7,7 +7,8 @@
 #SBATCH --ntasks-per-node=32
 #SBATCH --ntasks-per-core=1
 #SBATCH -t 00:59:00
-#SBATCH --reservation=now
+#SBATCH --account=liu-2019-26
+#SBATCH --reservation=tutorial-2024-04-25
 
 # load modules
 module load buildenv-intel/2023a-eb  CMake/3.26.4
