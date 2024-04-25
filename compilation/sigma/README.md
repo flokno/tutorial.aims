@@ -11,4 +11,4 @@ Installation
 
 If everything works, you should find a binary `./aims.231208.scalapack.mpi.x`
 
-Use `realpath aims.231208.scalapack.mpi.x` to prepare the run script `run_aims` and move it on an executable path.
+Use `realpath aims.231208.scalapack.mpi.x` to prepare the submit script `submit_aims.sh` and move it your home folder (or somewhere else you find it).

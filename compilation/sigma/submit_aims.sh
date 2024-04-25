@@ -12,5 +12,10 @@
 fil=aims.out
 
 echo $SLURM_JOB_ID > $fil
-run_aims 2>&1 >> $fil 
+
+bin=/home/x_flokn/local/FHIaims/build_231212/aims.231208.scalapack.mpi.x
+
+mpprun $bin 2>&1 >> $fil
+
+# run_aims 2>&1 >> $fil
 
