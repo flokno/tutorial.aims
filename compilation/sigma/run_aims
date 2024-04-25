@@ -1,0 +1,13 @@
+bin=/path/to/FHIaims/build_231212/aims.231208.scalapack.mpi.x
+
+mpprun $bin
+
+exitcode=$?
+
+echo "exitcode: "
+echo $exitcode
+
+if [ $exitcode -ne 0 ]; then
+  echo "aims returned $exitcode for $bin, failing job"
+  exit 1
+fi
